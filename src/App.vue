@@ -2,15 +2,22 @@
 import "@fortawesome/fontawesome-free/css/all.css"
 import "@fortawesome/fontawesome-free/js/all.js"
 
-export default {
+import Header from "./components/partials/Header.vue"
+import Main from "./components/Main.vue"
 
+export default {
+  name : "App",
+
+  components: {
+    Header,
+    Main
+  }
 }
 </script>
 
 <template>
-  <div class="container">
-    <h1>Boolfolio</h1>
-  </div>
+  <Header/>
+  <Main/>
 </template>
 
 <style lang="scss">
