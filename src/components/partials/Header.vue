@@ -18,19 +18,19 @@ export default {
         <div class="h-100">
           <ul class="d-flex align-items-center mb-0 h-100">
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Home</a>
+              <router-link :to="{ name: 'home' }" class="header-menu-link">Home</router-link>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Projects</a>
+              <router-link :to="{ name: 'projects' }" class="header-menu-link">Projects</router-link>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">About</a>
+              <router-link :to="{ name: 'about' }" class="header-menu-link">About</router-link>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Services</a>
+              <router-link :to="{ name: 'services' }" class="header-menu-link">Services</router-link>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Contacts</a>
+              <router-link :to="{ name: 'contacts' }" class="header-menu-link">Contacts</router-link>
             </li>
           </ul>
         </div>
@@ -104,6 +104,20 @@ export default {
             background-color: $danger_red;
             transform-origin: bottom right;
             transition: transform 0.25s ease-out;
+          }
+
+          &.active {
+            color: $danger_red;
+          }
+
+          &.active::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $danger_red;
           }
         }
 

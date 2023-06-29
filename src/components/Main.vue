@@ -6,7 +6,7 @@ export default {
 
 <template>
   <main>
-    <h1 class="p-5">Main</h1>
+    <router-view></router-view>
   </main>
 </template>
 
