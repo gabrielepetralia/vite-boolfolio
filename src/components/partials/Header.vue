@@ -57,8 +57,8 @@ export default {
     z-index: 999;
     height: 75px;
     padding: 0 50px;
-    background-color: $dark_white;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+    background-color: $dirty_white;
+    box-shadow: 0 0 20px 4px rgba(0,0,0,0.1);
 
     nav {
       .logo {

@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 body {
   scroll-behavior: smooth !important;
 }
@@ -8,10 +10,31 @@ body {
   margin: 0 auto;
 }
 
+.gp-badge {
+  color: $dirty_white;
+  background-color: $dark_gray;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: $danger_red;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
